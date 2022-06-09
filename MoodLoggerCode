@@ -1,0 +1,62 @@
+# mood logger
+
+string = ("How is your mood today?")
+new_string = string.center(134)
+print(new_string)
+
+string = "1. Good"
+new_string = string.center(125)
+print(new_string)
+string = "2. Bad"
+new_string = string.center(123)
+print(new_string)
+string = "3. Okay"
+new_string = string.center(125)
+print(new_string)
+string = "4. Horrible"
+new_string = string.center(130)
+print(new_string)
+
+
+choice = input("Enter choice(1/2/3/4): ".center(132))
+
+
+# take input from the user
+
+
+print ("   ")
+print ("   ")
+print ("   ")
+
+
+# User inputs + outputs
+if choice == '1':
+    string = "Nice to hear!"
+    new_string = string.center(125)
+    print(new_string)
+if choice == '2':
+    string = "Sorry to hear that!"
+    new_string = string.center(125)
+    print(new_string)
+if choice == '3':
+    string = "Everyone feels just okay sometimes, me, as a computer, feels great always!"
+    new_string = string.center(125)
+    print(new_string)
+if choice == '4':
+    string = "God's with you!"
+    new_string = string.center(125)
+
+import datetime
+import time
+
+# current timestamp
+now = datetime.datetime.now()
+string = now.strftime("%Y-%B-%d At %X %p")
+new_string = string.center(125)
+print(new_string)
+
+string = "Process logged internally"
+new_string = string.center(128)
+print(new_string)
+
+time.sleep(2000)  # Delays for (X) seconds before closing program
